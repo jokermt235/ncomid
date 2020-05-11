@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <div class="uk-section-muted ex-padding-top">
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active">
+                                <div>
+                                    <img src="img/logo_small.png">
+                                    <span class="uk-text-middle uk-text-bold uk-text-emphasis">НЦОМиД</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div class="uk-text-center uk-child-width-expand@s uk-child-width-1-3@s" uk-grid>
+                            <div>
+                                <div>
+                                    <img src="img/check.png" width=24px>
+                                    <span class="uk-text-middle uk-text-bold" style="color:#17449e">Нам доверяют</span>
+                                </div>
+                                <div class="uk-margin-small-top">
+                                    <span class="uk-text-muted">1000+ пациентов</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="img/check.png" width=24px>
+                                    <span class="uk-text-middle uk-text-bold" style="color:#17449e">Отзывы</span>
+                                </div>
+                                <div class="uk-margin-small-top">
+                                    <span class="uk-text-muted">100+ положительные</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="img/check.png" width=24px>
+                                    <span class="uk-text-middle uk-text-bold" style="color:#17449e">Номер #1</span>
+                                </div>
+                                <div class="uk-margin-small-top">
+                                    <span class="uk-text-muted">В Кыргызстане</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="uk-margin-medium-top">
+                <nav class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset" style="z-index:99999">
+                    <div class="uk-navbar-left uk-margin-medium-left">
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                <a class="ex-active uk-text-bold uk-text-capitalize" href="/">Главная</a>
+                            </li>
+                            <li class="uk-margin-left">
+                                <a class="ex-active uk-text-bold uk-text-capitalize" href="/">НЦОМиД</a>
+                                <div uk-dropdown>
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li class="uk-active"><a href="#">История</a></li>
+                                        <li><a href="#">О нас</a></li>
+                                        <li><a href="#">Дирекция</a></li>
+                                        <li><a href="#">Устав центра</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="uk-margin-left">
+                                <a class="ex-active uk-text-bold uk-text-capitalize" href="/">Cтруктура</a>
+                                <div uk-dropdown>
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Перинатальный центр</a></li>
+                                        <li><a href="#">Организационно методический отдел</a></li>
+                                        <li><a href="#">Центр мониторинга и оценки</a></li>
+                                        <li><a href="#">Отдел по внешним связям</a></li>
+                                        <li><a href="#">Электронное здравохранение</a></li> 
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="uk-margin-left">
+                                <a class="ex-active uk-text-bold uk-text-capitalize" href="/">Научная деятельность</a>
+                                <div uk-dropdown>
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Научная часть</a></li>
+                                        <li><a href="#">Диссертационный совет</a></li>
+                                        <li><a href="#">Журнал “ ЗДОРОВЬЕ МАТЕРИ И РЕБЕНКА”</a></li>
+                                        <li><a href="#">Аспирантура</a></li>
+                                        <li><a href="#">Клиническая ординатура</a></li> 
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="uk-margin-left">
+                                <a class="ex-active uk-text-bold uk-text-capitalize" href="/">Лечебная работа</a>
+                                <div uk-dropdown>
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Педиатрический блок</a></li>
+                                        <li><a href="#">Хирургический блок</a></li>
+                                        <li><a href="#">Лаборатория</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right uk-margin-medium-right">
+                        <div>
+                            <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                            <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                                <form class="uk-search uk-search-navbar uk-width-1-1">
+                                    <input class="uk-search-input" type="search" placeholder="Поиск..." autofocus>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="uk-margin-medium-left">
+                            <button class="uk-button uk-button-default ex-button-primary">Написать нам</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="img/DSC_7246.JPG" alt="" uk-cover>
+                    <div class="ex-overlay uk-position-center-left uk-position-large uk-width-1-2@s uk-light uk-padding">
+                        <h3>НЦОМиД</h3>
+                        <p>
+                            Перинатальный центр –  самое мощное и динамично развивающееся учреждение здравоохранения Кыргызской республики в системе родовспоможения.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/1.jpg" alt="" uk-cover>
+                    <div class="ex-overlay uk-position-center-left uk-position-large uk-width-1-2@s uk-light uk-padding">
+                        <h3>НЦОМиД</h3>
+                        <p>
+                            Перинатальный центр –  самое мощное и динамично развивающееся учреждение здравоохранения Кыргызской республики в системе родовспоможения.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="uk-light">
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+        </div>
+        <div class="ex-info-container">
+            <div class="uk-margin-large-left uk-margin-large-right uk-light uk-child-width-1-2@s" uk-grid>
+                <div class="uk-margin-top">
+                    <h3 class="uk-margin">Сервис помощи</h3>
+                    <p class="uk-margin">
+                        Перинатальный центр –  самое мощное и динамично развивающееся учреждение здравоохранения Кыргызской республики в системе родовспоможения.
+                    </p>
+                    <div class="uk-margin-large-top">
+                        <h3 class="ex-call-header">
+                            Тел.: +996 555 123 321
+                        </h3>
+                    </div>
+                </div>
+                <div class="uk-margin-top">
+                    <h3>
+                        <img src="img/Top-icon2.png" width=24px>
+                        <span class="uk-text-middle">Режим работы</span>
+                    </h3>
+                    <p>
+                        Перинатальный центр-это клиника, которая располагает гораздо большими возможностями, чем обычный родильный дом
+                    </p>
+                    <div>
+                        <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-expand" uk-leader>Пн - Пт</div>
+                            <div>9:00 - 18:00</div>
+                        </div>
+                        <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-expand" uk-leader>Cб - Вс</div>
+                            <div>9:00 - 18:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin-large-left uk-margin-large-top uk-margin-large-right">
+            <div>
+                <span class="uk-text-bold" style="color:#17449e;font-size:21px">Новости центра</span>
+                <a href="javascript:" class="uk-margin-left" style="text-decoration:underline">Все новости</a>
+            </div>
+            <div uk-grid class="uk-margin-top uk-child-width-1-3@s">
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="img/shutterstock_556980217-600x333.jpg" alt="">
+                        </div>
+                        <div class="uk-card-footer uk-light" style="background:#17449e" >
+                            <p>
+                                <a href="#">Открытие центра состоялось</a>
+                            </p>
+                            <div class="uk-grid-small" uk-grid>
+                                <div class="uk-width-expand"> 28 Марта , 2020</div>
+                                <div>г.Бишкек</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-round" width="64" height="64" src="img/pexels-photo-1-150x150.jpg">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom" style="font-size:18px"><a href="javascript:" style="color:black">Что нового при корона вирусе</a></h3>
+                            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                        </div>
+                    </div>
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-round" width="64" height="64" src="img/pexels-photo-1-150x150.jpg">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom" style="font-size:18px"><a href="javascript:" style="color:black">Что нового при корона вирусе</a></h3>
+                            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                        </div>
+                    </div>
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-round" width="64" height="64" src="img/pexels-photo-1-150x150.jpg">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom" style="font-size:18px"><a href="javascript:" style="color:black">Что нового при корона вирусе</a></h3>
+                            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="uk-list uk-list-divider">
+                        <li class="uk-padding-small"><a href="#">Новости лабаратории</a></li>
+                        <li class="uk-padding-small"><a href="#">Новости по узи уди </a></li>
+                        <li class="uk-padding-small"><a href="#">Новости препаратов</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin-large-top">
+            <h3 class="uk-text-center uk-text-secondary uk-text-bold">Почему выбирают нас</h3>
+            <div class="uk-margin-top uk-light uk-child-width-1-3@s" uk-grid>
+                <div class="uk-text-center ex-card-dark">
+                    <div class="uk-padding">
+                        <div>
+                            <img src="img/col-feature-1.png" width=92 height=92>
+                        </div>
+                        <h3>Отличная система мониторинга</h3>
+                        <p>
+                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-text-center ex-card-sdark">
+                    <div class="uk-padding">
+                        <div>
+                            <img src="img/col-feature-2.png" width=92 height=92>
+                        </div>
+                        <h3>Современное оборудование</h3>
+                        <p>
+                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-text-center ex-card-ssdark">
+                    <div class="uk-padding">
+                        <div>
+                            <img src="img/col-feature-3.png" width=92 height=92>
+                        </div>
+                        <h3>Только лучший персонал</h3>
+                        <p>
+                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin-large">
+            <h3 class="uk-text-center uk-text-secondary uk-text-bold">Отзывы</h3>
+            <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow>
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <div class="uk-position-left uk-margin-large-left uk-margin-large-top">
+                            <div class="uk-margin-large-left" style="font-size: 96px;color: #17449e;">
+                                &#10077;
+                            </div>
+                        </div>
+                        <div class="uk-position-center uk-dark">
+                            <p class="uk-margin-large  uk-text-lead uk-width-xxlarge" style="font-style: oblique;">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+                        </div>
+                        <div class="uk-position-bottom-center uk-margin-large-bottom">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="64" height="64" src="img/pexels-photo-1-150x150.jpg">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <p class="uk-text-bold uk-margin-remove-bottom" style="color:#17449e">Жон Дое</p>
+                                    <span class="uk-dark uk-margin-remove-top">Мамочка</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-position-bottom-right uk-margin-large-right uk-margin-large-bottom">
+                            <div class="uk-margin-large-right" style="font-size: 96px;color: #17449e;">
+                                &#10078;
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-left uk-margin-large-left uk-margin-large-top">
+                            <div class="uk-margin-large-left" style="font-size: 96px;color: #17449e;">
+                                &#10077;
+                            </div>
+                        </div>
+                        <div class="uk-position-center uk-dark">
+                            <p class="uk-margin-large uk-width-xxlarge uk-text-lead" style="font-style: oblique;">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+                        </div>
+                        <div class="uk-position-bottom-center uk-margin-large-bottom">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="64" height="64" src="img/pexels-photo-1-150x150.jpg">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <p class="uk-text-bold uk-margin-remove-bottom" style="color:#17449e">Жон Дое</p>
+                                    <span class="uk-dark uk-margin-remove-top">Мамочка</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-position-bottom-right uk-margin-large-right uk-margin-large-bottom">
+                            <div class="uk-margin-large-right" style="font-size: 96px;color: #17449e;">
+                                &#10078;
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="uk-position-center-left uk-margin-large-left" uk-slideshow-item="previous">
+                    <img src="img/sort-left_gradient.png">
+                </a>
+                <a href="#" class="uk-position-center-right uk-margin-large-right" uk-slideshow-item="next">
+                    <img src="img/sort-right_gradient.png">
+                </a>
+            </div>
+        </div>
+        <div class="uk-margin-large-top uk-margin-large-bottom">
+            <div class="uk-margin-top uk-light uk-child-width-1-3@s uk-grid-collapse" uk-grid>
+                <div class="uk-inline" >
+                    <img src="img/contact.png" class="uk-width-expand">
+                    <div class="uk-overlay-primary uk-position-cover" style="background-color:#113377d4"></div>
+                    <div class="uk-overlay uk-position-center uk-light">
+                        <div class="uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <a href="#">
+                                    <img class="uk-border-round" width="56" height="56" src="img/Location-Map-icon-w.png">
+                                </a>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="uk-text-bold uk-margin-remove-bottom">Адрес:</p>
+                                <span class="uk-dark uk-margin-remove-top uk-text-bold">г. Бишкек мкр. Асамбай 21/21a</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="uk-inline" >
+                    <img src="img/contact2.png">
+                    <div class="uk-overlay-primary uk-position-cover" style="background-color:#001848e8"></div>
+                    <div class="uk-overlay uk-position-center uk-light">
+                        <div class="uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <a href="#">
+                                    <img class="uk-border-round" width="56" height="56" src="img/Email-icon-w.png">
+                                </a>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="uk-text-bold uk-margin-remove-bottom">Email:</p>
+                                <span class="uk-dark uk-margin-remove-top uk-text-bold">ncomid@info.kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-inline" >
+                    <img src="img/contact.png">
+                    <div class="uk-overlay-primary uk-position-cover" style="background-color:#17449e94"></div>
+                    <div class="uk-overlay uk-position-center uk-light">
+                        <div class="uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <a href="#">
+                                    <img class="uk-border-round" width="56" height="56" src="img/Phone-2-icon-w.png">
+                                </a>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="uk-text-bold uk-margin-remove-bottom">Телeфон:</p>
+                                <span class="uk-dark uk-margin-remove-top uk-text-bold">+996 555 123 321</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-section uk-dark">
+            <div class="uk-container"> 
+                <div class="uk-grid-match uk-child-width-1-4@s uk-grid-collapse" uk-grid>
+                    <div>
+                        <div>
+                            <img src="img/logo_small.png">
+                            <span class="uk-text-middle uk-text-bold" style="color:black">НЦОМиД</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="color:black">О нас</h3>
+                        <ul class="uk-list uk-list-striped">  
+                            <li><a href="#" class="uk-link-reset"><span uk-icon="arrow-right"></span> Наша миссия</a></li>
+                            <li><a href="#" class="uk-link-reset"><span uk-icon="arrow-right"></span> Награды</a></li>
+                            <li><a href="#" class="uk-link-reset"><span uk-icon="arrow-right"></span> Доклады</a></li>
+                            <li><a href="#" class="uk-link-reset"><span uk-icon="arrow-right"></span> Спонсоры</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color:black">Наши услуги</h3>
+                        <ul class="uk-list uk-list-striped">  
+                            <li><a href="#" class="uk-link-reset"><span uk-icon="arrow-right"></span> Лечение</a></li>
+                            <li><a href="#" class="uk-link-reset"><span uk-icon="arrow-right"></span> Акушерство</a></li>
+                            <li><a href="#" class="uk-link-reset"><span uk-icon="arrow-right"></span> Геникология</a></li>
+                            <li><a href="#" class="uk-link-reset"><span uk-icon="arrow-right"></span> Реабилитация</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color:black">Вызовы</h3>
+                        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+                            <div>Вызов в течении 24 часов</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
