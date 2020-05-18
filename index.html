@@ -9,6 +9,7 @@
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
         <script src="js/vue.js"></script>
+        <script src="js/axios.min.js"></script>
     </head>
     <body>
         <div class="uk-section-muted ex-padding-top">
@@ -460,7 +461,7 @@
                       <div class="uk-form-controls">
                         <div class="uk-inline">
                           <span class="uk-form-icon" uk-icon="icon: user"></span>
-                          <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Имя ..."/>
+                          <input class="uk-input" id="fullname" type="text" v-model="fullname.value" placeholder="Имя ..."/>
                         </div>
                       </div>
                     </div>
@@ -469,25 +470,48 @@
                       <div class="uk-form-controls">
                           <div class="uk-inline">
                             <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="example@example.com"/>
+                            <input class="uk-input" id="email" type="text"  v-model="email.value" placeholder="example@example.com"/>
                           </div>
                       </div>
                     </div>
                     <div class="uk-margin">
-                        <textarea class="uk-textarea" rows="5" placeholder="Ваше сообщение"></textarea>
+                        <textarea class="uk-textarea" id="msg" rows="5"  v-model="msg.value" placeholder="Ваше сообщение"></textarea>
                     </div>
                   </form>
                 </div>
                 <div class="uk-modal-footer uk-text-right">
-                    <button class="uk-button uk-button-default ex-button-primary" type="button">Отправить</button>
+                    <button v-on:click="send" class="uk-button uk-button-default ex-button-primary" type="button">Отправить</button>
                 </div>
             </div>
         </div>
         <script>
+        var root = "http://localhost:3000/api/v1";
         var app = new Vue({
-            el: '#app',
-            data: {
-              message: 'Hello Vue!'
+            el: '#modal-contact',
+            data: {message: 'Hello Vue!'},
+            methods: {
+              send: function(){
+                axios.post(root + "/" + "contacts" ,
+                  {
+                    "fullname":fullname.value,
+                    "email"  : email.value,
+                    "msg" : msg.value
+                  },
+                  {
+                    headers:{
+                      "Content-Type" : "application/json"
+                    }
+                  }
+                ).then((response) => {
+                  if(response){
+                    this.close();
+                  }
+                  console.log(response);
+                })
+                .catch((error) => {
+                  console.log(error);
+                });
+              }
             }
           });
         </script>
