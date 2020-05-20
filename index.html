@@ -134,22 +134,13 @@
             </div>
         </div>
         <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
-            <ul class="uk-slideshow-items">
-                <li>
-                    <img src="img/DSC_7246.JPG" alt="" uk-cover>
+            <ul class="uk-slideshow-items" id="banners">
+                <li v-for="item in items" :key="item.title">
+
                     <div class="ex-overlay uk-position-center-left uk-position-large uk-width-1-2@s uk-light uk-padding">
-                        <h3>НЦОМиД</h3>
+                        <h3>{{item.title}}</h3>
                         <p>
-                            Перинатальный центр –  самое мощное и динамично развивающееся учреждение здравоохранения Кыргызской республики в системе родовспоможения.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/1.jpg" alt="" uk-cover>
-                    <div class="ex-overlay uk-position-center-left uk-position-large uk-width-1-2@s uk-light uk-padding">
-                        <h3>НЦОМиД</h3>
-                        <p>
-                            Перинатальный центр –  самое мощное и динамично развивающееся учреждение здравоохранения Кыргызской республики в системе родовспоможения.
+                            {{item.desc}}
                         </p>
                     </div>
                 </li>
@@ -294,7 +285,7 @@
         <div class="uk-margin-large">
             <h3 class="uk-text-center uk-text-secondary uk-text-bold">Отзывы</h3>
             <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow>
-                <ul class="uk-slideshow-items">
+                <ul class="uk-slideshow-items" id="banner">
                     <li>
                         <div class="uk-position-left uk-margin-large-left uk-margin-large-top">
                             <div class="uk-margin-large-left" style="font-size: 96px;color: #17449e;">
@@ -504,9 +495,8 @@
                   }
                 ).then((response) => {
                   if(response){
-                    this.close();
+                    UIkit.modal('#modal-contact').hide();
                   }
-                  console.log(response);
                 })
                 .catch((error) => {
                   console.log(error);
@@ -514,6 +504,33 @@
               }
             }
           });
+          var banner = new Vue({
+              el: '#banners',
+              mounted : function(){
+                this.loadBanners();
+              },
+              data : {
+                items: []
+              },
+              methods: {
+                loadBanners: function(){
+                  axios.get(root + "/" + "banners" ,
+                    {
+                      headers:{
+                        "Content-Type" : "application/json"
+                      }
+                    }
+                  ).then((response) => {
+                    if(response){
+                      this.items = response.data;
+                    }
+                  })
+                  .catch((error) => {
+                    console.log(error);
+                  });
+                }
+              }
+            });
         </script>
     </body>
 </html>
